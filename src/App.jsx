@@ -1,15 +1,14 @@
 import './App.css'
-import HomePage from './pages/Home'
+import Home from './pages/Home'
+import { CartProvider } from './context/CartProvider' 
 
 function App() {
-
   return (
-    // <div>
+    <CartProvider>
       <div>
-      <HomePage />
-
+        <Home />
       </div>
-    
+    </CartProvider>
   )
 }
 

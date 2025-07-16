@@ -6,6 +6,7 @@ export const CartProvider = ({ children }) => {
   const [showInStockOnly, setShowInStockOnly] = useState(false)
 
   const addToCart = (product) => {
+    console.log(cartItems)
     setCartItems((prevItems) => {
       const exists = prevItems.find((item) => item.id === product.id)
       if (exists) return prevItems 
